@@ -8,8 +8,7 @@
     ],
     "routes": [
         {
-            "src": "/webhook",
-            "dest": "index.js"
+            "src": "/webhook"
         }
     ]
 }
