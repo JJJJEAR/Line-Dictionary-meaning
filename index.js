@@ -73,4 +73,4 @@ app.listen(port, () => {
   console.log('Listening on port '+ port);
 });
 
-module.exports = serverless(app);
+// module.exports = serverless(app);
