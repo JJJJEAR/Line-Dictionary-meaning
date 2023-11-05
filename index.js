@@ -5,6 +5,7 @@ const env = dotenv.config().parsed;
 const axios = require('axios').default;
 const app = express();
 const langdetect = require('langdetect');
+const serverless = require('serverless-http');
 
 const lineConfig = {
   channelAccessToken: env.ACCESS_TOKEN,
@@ -72,4 +73,4 @@ app.listen(port, () => {
   console.log('Listening on port '+ port);
 });
 
-module.exports = app;
+module.exports = serverless(app);
