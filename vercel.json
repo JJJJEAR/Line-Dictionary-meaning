@@ -10,7 +10,7 @@
         {
             "src": "/webhook",
             "dest": "index.js",
-            "methods":"POST"
+            "methods": ["POST"]
         }
     ]
 }
